@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            :root{
+                --main-color: #4a3adc;
+                --dark-color: #11152a;
+                --light-color: #d0d4ed;
+            }
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            *,::before,::after{
+                box-sizing: border-box;
+            }
+            body{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.8;
+                color: var(--dark-color);
+                background-color: #efefef;
+            }
+            h2{
+                font-size: 3em;
+                font-weight: 400;
+                line-height: 1.2;
+                color: white;
+                margin-bottom: 20px;
+            }
+            ul{
+                list-style: none;
+            }
+            .container{
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+            .wrapper>div{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 800px;
+                min-height: 500px;
+                margin: 5em auto;
+                background-color: var(--main-color);
+                overflow: hidden;
+                box-shadow: rgba(0,0 ,0,0.45)0 25px 25px -20px;
+            }
+          :is(.signup, .login) > div{
+                position: relative;
+                flex: 1 0 50%;
+                padding: 60px;
+            }
+            a{
+                text-decoration: none;
+                color: #eb3b52;
+            }
+            .content-heading .y-style{
+                display: flex;
+                flex-direction: column;
+            }
+            .logo a{
+                display: inline-block;
+                margin-bottom: 60px;
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--dark-color);
+            }
+            .logo span{
+                color: #4a3aec;
+            }
+            .content-heading p{
+                color: var(--light-color);
+            }
+            .content-form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            /* hide the form*/
+            /* .login{
+                display: none !important;
+            } */
+            form input:not(#remember){
+                font-family: inherit;
+                width: 100%;
+                outline: none;
+                margin: 0 0 20px ;
+                padding: 10px 15px;
+                border-radius: 7px;
+                border: 1px solid var(--light-color);
+            }
+            form input::placeholder{
+                color: var(--light-color);
+            }
+            form button{
+                background-color: #eb3b52;
+                color: white;
+                width: 100%;
+                margin: 30px 0;
+                border: 0;
+                line-height: 42px;
+                border-radius: 7px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.3s ease-out;
+                --webkit-transition: all .3s ease-out;
+            }
+            button:hover{
+                background-color: var(--dark-color);
+            }
+            .afterform{
+                text-align: center;
+                margin-top: 20px;
+            }
+            .form .check{
+                position: relative;
+                padding-left: 20px;
+                font-size: 12px;
+                float: left;
+            }
+            .login-show .signup .signup-show .login{
+                display: none;
+            }
+            .signup-show, .signup .login-show .login{
+                display: flex;
+            }
+            .form .check input{
+                position: absolute;
+                left: 0;
+                top: 4px;
+            }
+            form .forgot{
+                float: right;
+                font-size: 12px;
+            }
+            form label a, .afterform a{
+                color: var(--main-color);
+            }
+            form :is(p, label) a:hover .afterform a:hover{
+                border-bottom: 1px dotted;
+            }
+            .content-form::before{
+                content: '';
+                position: absolute;
+                width: 200%;
+                height: 200%;
+                background-color: #fff;
+                border-radius: 60%;
+                transform: translate3d(-18%, -10% 0);
+                -webkit-transform: translate3d(-18%, 10% 0);
+            }
+            
+            .y-style{
+                position: relative;
+                transform: translate3d(0 20% 0);
+               -webkit-transform: translate3d(0 20% 0);
+               animation: fade-in 0.7s cubic-bezier(0.39,0.575,0.565,1) both;
+               -webkit-animation: fade-in 0.7s cubic-bezier(0.39,0.575,0.565,1) both;
+            }
+            @keyframes fade-in {
+                from{
+                    opacity: 0;
+                    transform: translate3d(0 20% 0);
+                }
+                to{
+                    opacity: 1;
+                }
+            }
+            :is(.login-show .signup-show)
+            .welcome{
+                text-align: center;
+            }
+            @media screen and (min-width : 768px) {
+                .wrapper>div{
+                    flex-direction: row;
+                    max-width: 800px;
+                }
+              .signup .content-heading .y-style{
+                height: 100%;
+                justify-content: space-between;
+              }
+              .content-form::before{
+                transform: translate3d(-27%, -21% 0);
+                              -webkit-transform: translate3d(-27%, 21% 0);
+              }
+              .welcome{
+                text-align: left;
+                margin: 5em 0 auto;
+              }
+            }   
+        </style>
+    </head>
+    <body>
+        <div class="site login-show" id="page ">
+        <div class="container">
+            <div class="wrapper">
+                <div class="login">
+                    <div class="content-heading">
+                        <div class="y-style">
+                            <div class="logo"><a
+                                    href="#">Code<span>Artisic</span></a></div>
+                            <div class="welcome">
+                                <h2>Welcome <br> Back!</h2>
+                                <p>Here u can login or register</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-form">
+                        <div class="y-style">
+                            <form action>
+                                <p>
+                                    <label for>Email</label>
+                                    <input type="text"
+                                        placeholder="Please Enter Email">
+                                </p>
+                                <p>
+                                    <label for>Password</label>
+                                    <input type="password"
+                                        placeholder="Please Enter Password">
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="remember">
+                                    <label for>Remember Me</label>
+                                </p>
+                                <p class="forgot"><a href="#">Forgot
+                                        Password?</a></p>
+                                <button type="submit">Login</button>
+                            </form>
+                            <div class="afterform">
+                                <p>Don't have an Account?</p>
+                                <a href="#" class="t-signup">Resigter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <!-- login form now -->
+                <div class="signup">
+                    <div class="content-heading">
+                        <div class="y-style">
+                            <div class="logo"><a
+                                    href="#">Code<span>Artisic</span></a></div>
+                            <div class="welcome">
+                                <h2>Welcome <br> Back!</h2>
+                                <p>Here u can login or register</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-form">
+                        <div class="y-style">
+                            <form action>
+                                <p>
+                                    <label for>Email</label>
+                                    <input type="text"
+                                        placeholder="Please Enter Email">
+                                </p>
+                                <p>
+                                    <label for>Password</label>
+                                    <input type="password"
+                                        placeholder="Please Enter Password">
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="remember">
+                                    <label for>Remember Me</label>
+                                </p>
+                                <p class="forgot"><a href="#">Forgot
+                                        Password?</a></p>
+                                <button type="submit">Login</button>
+                            </form>
+                            <div class="afterform">
+                                <p>Don't have an Account?</p>
+                                <a href="#" class="t-login">Resigter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        </div>
+        <script>
+            const signup = document.querySelector('.t-signup');
+            const login = document.querySelector('.t-login');
+            const addclass = document.querySelector('.site');
+            signup.addEventListener('click', () => {
+                addclass.className = 'site signup-show';
+            });
+            login.addEventListener('click', () => {
+                addclass.className = 'site login-show';
+            });
+        </script>
+    </body>
+</html>

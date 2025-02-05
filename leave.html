@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <link rel="stylesheet" href="./assets/css/skin/color-3.css" />
+
+        <!--========= Style switcher========= -->
+        <link
+            rel="stylesheet"
+            href="./assets/css/skin/color-1.css"
+            class="alternate-style"
+            title="color-1"
+            disabled />
+        <link
+            rel="stylesheet"
+            href="./assets/css/skin/color-2.css"
+            class="alternate-style"
+            title="color-2"
+            disabled />
+        <link
+            rel="stylesheet"
+            href="./assets/css/skin/color-3.css"
+            class="alternate-style"
+            title="color-3"
+            disabled />
+        <link
+            rel="stylesheet"
+            href="./assets/css/skin/color-4.css"
+            class="alternate-style"
+            title="color-4"
+            disabled />
+        <link
+            rel="stylesheet"
+            href="./assets/css/skin/color-5.css"
+            class="alternate-style"
+            title="color-5"
+            disabled />
+
+        <link rel="stylesheet" href="./assets/css/clock.css" />
+    </head>
+
+    <body>
+        <!-- html for sidedar start here -->
+        <div class="sidebar">
+            <div class="logo-details">
+                <i class="bx bxl-ok-ru"></i>
+                <span class="logo_name">HR<span
+                        style="color: var(--skin-color)">MS</span></span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="employee-dashboard.html">
+                        <i class="bx bx-grid-alt"></i>
+                        <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class="no-list">
+                            <a href="employee-dashboard.html"
+                                class="link_name">Dashboard</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="./attendance.html">
+                        <i class="bx bx-user icon"></i>
+                        <span class="link_name">Attendance </span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class="no-list">
+                            <a href="./attendance.html"
+                                class="link_name">Attendance</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./grievence.html">
+                        <i class="bx bx-user icon"></i>
+                        <span class="link_name">Grievence </span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class="no-list">
+                            <a href="./grievence.html"
+                                class="link_name">Grievence</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active-bar">
+                    <a href="./leave.html">
+                        <i class="bx bx-spreadsheet"></i>
+                        <span class="link_name">Leave</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class="no-list">
+                            <a href="leave.html" class="link_name">Leave</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="./loan.html">
+                        <i class="bx bx-spreadsheet"></i>
+                        <span class="link_name">Loan</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class="no-list">
+                            <a href="loan.html" class="link_name">Loan</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="payroll1.html">
+                        <i class="bx bx-cog"></i>
+                        <span class="link_name">Payroll</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class="no-list">
+                            <a href="payroll1.html"
+                                class="link_name">Payroll</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="setting.html">
+                        <i class="bx bx-cog"></i>
+                        <span class="link_name">Settings</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class="no-list">
+                            <a href="setting.html"
+                                class="link_name">Settings</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- html for sidedar ends here -->
+        <section class="content">
+            <!-- html for nanbar start here -->
+            <nav>
+                <div class="two">
+                    <i class="bx bx-menu"></i>
+                    <input class="search" type="search"
+                        placeholder="Type to search" /><i
+                        class="bx bx-search-alt-2"></i>
+                </div>
+                <div class="sec">
+                    <div class="theme-toggler">
+                        <!-- <span class="material-icons-sharp active">light_mode</span> -->
+                        <span class="active"><i class="bx bx-sun"></i></span>
+                        <!-- <span class="material-icons-sharp">dark_mode</span> -->
+                        <span><i class="bx bx-moon"></i></span>
+                    </div>
+                    <div class="manage">
+                        <div class="notifications">
+                            <div class="icon_wrap">
+                                <a href="#">
+                                    <span><i
+                                            class="bx bx-bell bx-tada"></i></span>
+                                    <span class="badge">5</span>
+                                </a>
+                            </div>
+                            <div class="notification_dd">
+                                <ul class="notification_ul">
+                                    <li class="starbucks success">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div class="title">Lorem, ipsum
+                                                dolor.</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>11:05am</p>
+                                        </div>
+                                    </li>
+                                    <li class="baskin_robbins failed">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div class="title">Lorem, ipsum
+                                                dolor.</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>08:00am</p>
+                                        </div>
+                                    </li>
+                                    <li class="mcd success">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div class="title">Lorem, ipsum
+                                                dolor.</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>9/4/2023</p>
+                                        </div>
+                                    </li>
+                                    <li class="pizzahut failed">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div class="title">Lorem, ipsum
+                                                dolor.</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>9/4/2023</p>
+                                        </div>
+                                    </li>
+                                    <li class="kfc success">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div class="title">Lorem, ipsum
+                                                dolor.</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>9/4/2023</p>
+                                        </div>
+                                    </li>
+                                    <li class="show_all">
+                                        <p class="link">Show All Activities</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="icon_wrap">
+                                <a href="#">
+                                    <span><i
+                                            class="bx bx-envelope bx-tada"></i></span>
+                                    <span class="badge">2</span>
+                                </a>
+                            </div>
+                            <div class="message_dd">
+                                <ul class="message_ul">
+                                    <li class="starbucks success">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div
+                                                class="title">namubirualice2000@gmail.com</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>11:05am</p>
+                                        </div>
+                                    </li>
+                                    <li class="baskin_robbins failed">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div
+                                                class="title">namubirualice2000@gmail.com</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>08:00am</p>
+                                        </div>
+                                    </li>
+                                    <li class="mcd success">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div
+                                                class="title">rickrambo78@gmail.com</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>9/4/2023</p>
+                                        </div>
+                                    </li>
+                                    <li class="pizzahut failed">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div
+                                                class="title">namubirualice2000@gmail.com</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>9/4/2023</p>
+                                        </div>
+                                    </li>
+                                    <li class="kfc success">
+                                        <div class="notify_icon">
+                                            <span class="icon"></span>
+                                        </div>
+                                        <div class="notify_data">
+                                            <div
+                                                class="title">kikajjosda@gmail.com</div>
+                                            <div class="sub_title">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                            </div>
+                                        </div>
+                                        <div class="notify_status">
+                                            <p>9/4/2023</p>
+                                        </div>
+                                    </li>
+                                    <li class="show_all">
+                                        <p class="link">Show All Activities</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="style-switcher-toggler s-icon"><i
+                                    class="bx bx-cog bx-spin"></i></span>
+                        </div>
+                        <div class="style-switcher">
+                            <h4>Theme colors</h4>
+                            <div class="colors">
+                                <span
+                                    class="color-1"
+                                    onclick="setActiveStyle('color-1')"></span>
+                                <span
+                                    class="color-2"
+                                    onclick="setActiveStyle('color-2')"></span>
+                                <span
+                                    class="color-3"
+                                    onclick="setActiveStyle('color-3')"></span>
+                                <span
+                                    class="color-4"
+                                    onclick="setActiveStyle('color-4')"></span>
+                                <span
+                                    class="color-5"
+                                    onclick="setActiveStyle('color-5')"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey, <b>Namubiru Alice</b></p>
+                            <small class="text-muted1">Employee</small>
+                        </div>
+                        <div class="profile-photo icon_wrap"
+                            style="cursor: pointer">
+                            <img src="./assets/img/face girl.jpg" alt />
+                        </div>
+
+                        <div class="profile_dd">
+                            <ul class="profile_ul">
+                                <li>
+                                    <a class="logout" href="#"><span
+                                            class="picon"><i
+                                                class="bx bxs-user"></i></span>
+                                        &nbsp;Profile</a>
+                                </li>
+                                <li>
+                                    <a class="logout" href="#"><span
+                                            class="picon"><i
+                                                class="bx bx-log-out"></i></span>&nbsp;Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- html for nanbar ends here -->
+            <!-- html for main part starts here -->
+            <main>
+
+                <div class="container">
+                    <h1 class="title">Requset for a Leave</h1>
+                    <ul class=" emp" style="line-height: none;">
+                        <li><a href="#">Home</a></li>
+                        <li class="divider">/</li>
+                        <li><a href="#" class="active">Leave</a></li>
+                        <li><a href="#" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                class="btn btn-sm"
+                                style="background: var(--skin-color); color: #fff">Apply
+                                for a leave</a></li>
+                    </ul>
+                    <div class="hr"></div>
+
+                    <div class="event-table mt-3">
+                        <div class="color-top" style="left: -22px;"></div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Employee's Name</th>
+                                    <th>Leave Type</th>
+                                    <th>Duration</th>
+                                    <th>Leave Status</th>
+                                    <th>Comment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Namubiru Alice</td>
+                                    <td>Medical</td>
+                                    <td>9/02/2024-8/03/2024</td>
+                                    <td class="text-warning">Pending</td>
+                                    <td>Urgent Leave required...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content modal-bg">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5"
+                                    id="exampleModalLabel">Apply for a
+                                    Leave</h1>
+                                <button type="button" class="btn-close"
+                                    style="color: var(--text-color);"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                           <form action="">
+                            <div class="modal-body">
+
+                                <div class="mb-2"
+                                    style="width: 80%; margin: 0 auto;">
+                                    <label class="form-label">Leave Type</label>
+                                    <select class="form-select">
+                                        <option selected>Select Leave
+                                            Type</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-2"
+                                    style="width: 80%; margin: 0 auto;">
+                                    <label class="form-label">Start time</label>
+                                    <input type="date"
+                                        class="form-control form-name">
+                                </div>
+                                <div class="mb-2"
+                                    style="width: 80%; margin: 0 auto;">
+                                    <label class="form-label">End time</label>
+                                    <input type="date"
+                                        class="form-control form-name">
+                                </div>
+                                <div class="mb-2"
+                                    style="width: 80%; margin: 0 auto;">
+                                    <label for="exampleFormControlTextarea1"
+                                        class="form-label">Comment</label>
+                                    <textarea
+                                        class="form-control"
+                                        id="exampleFormControlTextarea1"
+                                        rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                    class="btn btn-secondary btn-sm"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm"
+                                    style="background: var(--skin-color); color: #fff">Apply</button>
+                            </div>
+                           </form>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+            <!-- html for main part ends here -->
+        </section>
+        <!--Html for the footer-->
+        <footer class="footer">
+            <!-- <div class="hr"></div> -->
+            <div class="last">
+                <p>&copy;copyright all rights reserved by Namubiru Alice</p>
+            </div>
+
+        </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <script src="./assets/js/sidebar.js"></script>
+        <script src="./assets/js/theme-color.js"></script>
+        <script src="./assets/js/notification.js"></script>
+        <script src="./assets/js/color-picker.js"></script>
+        <script src="./assets/js/script.js" defer></script>
+    </body>
+</html>
